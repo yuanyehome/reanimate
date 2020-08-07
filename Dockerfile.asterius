@@ -1,0 +1,10 @@
+FROM terrorjack/asterius:latest
+
+ADD . .
+
+RUN git clone https://github.com/reanimate/reanimate-svg.git; \
+    cd reanimate-svg; \
+    ahc-cabal v1-install --package-db=clear --package-db=global
+RUN ahc-cabal v1-install --package-db=clear --package-db=global
+
+ENTRYPOINT [ "bash" ]
