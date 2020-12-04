@@ -11,7 +11,7 @@ A PolyShape is a closed set of curves.
 -}
 module Reanimate.PolyShape
   ( PolyShape(..)
-  , PolyShapeWithHoles
+  , PolyShapeWithHoles(..)
   , svgToPolyShapes     -- :: Tree -> [PolyShape]
   , svgToPolygons       -- :: Double -> Svg -> [Polygon]
 
@@ -38,6 +38,7 @@ module Reanimate.PolyShape
   , mergePolyShapeHoles -- :: PolyShapeWithHoles -> PolyShape
   , plPartial
   , plGroupTouching
+  , plPolygonify
   ) where
 
 import           Algorithms.Geometry.PolygonTriangulation.Triangulate (triangulate')
