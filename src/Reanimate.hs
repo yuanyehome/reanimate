@@ -35,6 +35,8 @@ no other parameters are given. Key features:
 -}
 module Reanimate
   ( reanimate,
+    reanimateLive,
+    reanimateLiveEntry,
     -- * Animations
     SVG,
     Time,
@@ -196,6 +198,7 @@ import           Reanimate.Blender
 import           Reanimate.ColorMap
 import           Reanimate.Constants
 import           Reanimate.Driver
+import           Reanimate.Driver.Daemon
 import           Reanimate.LaTeX
 import           Reanimate.Parameters
 import           Reanimate.Povray
